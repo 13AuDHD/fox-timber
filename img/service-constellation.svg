@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760">
+<defs>
+  <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#214A38"/><stop offset="1" stop-color="#171717"/></linearGradient>
+  <pattern id="p" width="52" height="52" patternUnits="userSpaceOnUse"><path d="M0 26h52M26 0v52" stroke="#ffffff" stroke-opacity=".045"/></pattern>
+</defs>
+<rect width="1200" height="760" rx="48" fill="url(#g)"/><rect width="1200" height="760" rx="48" fill="url(#p)"/>
+<g fill="none" stroke="#C9A97A" stroke-width="3" opacity=".75">
+<path d="M95 590C235 405 335 520 465 320S760 155 1100 225"/>
+<path d="M90 660C270 485 420 615 545 410S825 265 1120 310" opacity=".45"/>
+</g>
+<g fill="#fff"><circle cx="185" cy="490" r="9"/><circle cx="335" cy="455" r="7"/><circle cx="468" cy="320" r="11"/><circle cx="675" cy="230" r="8"/><circle cx="865" cy="190" r="12"/><circle cx="1085" cy="225" r="7"/></g>
+<g font-family="Inter,Arial" fill="#fff">
+<text x="90" y="120" font-size="28" letter-spacing="5" opacity=".7">STRATEGY • DESIGN • GROWTH</text>
+<text x="90" y="205" font-size="74" font-family="Cormorant Garamond,Georgia">Ideas built to travel.</text>
+</g></svg>
