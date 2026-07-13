@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Contact Fox & Timber to schedule a consultation for design, branding, marketing, advertising, launches, or business development.">
+  <meta name="theme-color" content="#171717">
+  <title>Contact Us | Fox &amp; Timber</title>
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="apple-touch-icon" href="img/favicon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="how-page">
+<header class="site-header">
+<a class="brand" href="index.html" aria-label="Fox and Timber home">
+  <img src="img/fox-timber-mark.png" alt="" />
+  <span>fox &amp; timber</span>
+</a>
+<button class="menu-toggle" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu">
+  <span></span><span></span><span></span>
+</button>
+<nav id="site-menu" class="site-menu" aria-label="Primary navigation">
+  <button class="menu-close" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+  <a href="index.html">home</a>
+  <a href="who.html">who</a>
+  <a href="what.html">what</a>
+  <a href="where.html">where</a>
+  <a href="how.html">how</a>
+  <a href="client-login.html">client login</a>
+  <div class="menu-social">
+    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="#" aria-label="Bluesky"><i class="fa-brands fa-bluesky"></i></a>
+  </div>
+</nav>
+</header>
+<main>
+<section class="page-hero form-hero">
+  <div><p class="eyebrow">How to begin</p><h1>Tell us what is taking shape.</h1><p class="lede">You do not need a perfect brief. Share what you know, what is not working, and what you hope becomes possible.</p></div>
+  <div class="form-note"><i class="fa-regular fa-clock"></i><p>After submitting, you will receive a confirmation email. We normally respond personally within <strong>24–48 hours</strong>.</p></div>
+</section>
+<section class="contact-section">
+  <form id="contact-form" class="contact-form" action="contact.php" method="post" novalidate>
+    <div class="honeypot" aria-hidden="true"><label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+    <div class="field-grid">
+      <label><span>Name *</span><input name="name" type="text" autocomplete="name" required></label>
+      <label><span>Email *</span><input name="email" type="email" autocomplete="email" required></label>
+      <label><span>Organization</span><input name="organization" type="text" autocomplete="organization"></label>
+      <label><span>Phone</span><input name="phone" type="tel" autocomplete="tel"></label>
+    </div>
+    <label><span>What kind of help are you looking for?</span>
+      <select name="interest">
+        <option>Brand identity or rebranding</option><option>Graphic design</option><option>Website design</option><option>Marketing or advertising</option><option>Business or product launch</option><option>Business development</option><option>Not sure yet</option>
+      </select>
+    </label>
+    <label><span>Tell us about the project *</span><textarea name="message" rows="8" required placeholder="What are you building? What is stuck? What would a good outcome look like?"></textarea></label>
+    <label class="check"><input type="checkbox" name="consent" required><span>I understand this form starts a conversation and does not create a client agreement.</span></label>
+    <button class="button primary submit-button" type="submit">Send message <i class="fa-solid fa-paper-plane"></i></button>
+    <p class="form-status" role="status" aria-live="polite"></p>
+  </form>
+  <div id="success-panel" class="success-panel" hidden>
+    <i class="fa-solid fa-circle-check"></i>
+    <h2>Your message is on its way.</h2>
+    <p>We sent a confirmation to the email address you provided. A person from Fox &amp; Timber should respond within 24–48 hours.</p>
+    <a href="index.html" class="text-link">Return home <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div>
+    <img src="img/fox-timber-mark.png" alt="" class="footer-mark">
+    <p>Thoughtful design, strategy, and storytelling from Durango, Colorado to wherever your work needs to go.</p>
+  </div>
+  <div class="footer-links">
+    <a href="who.html">Our story</a>
+    <a href="what.html">Services</a>
+    <a href="how.html">Start a conversation</a>
+    <a href="client-login.html">Client portal</a>
+  </div>
+  <div>
+    <p class="eyebrow">Fox &amp; Timber, LLC</p>
+    <p>Durango, Colorado<br>Serving clients worldwide</p>
+    <div class="social-row">
+      <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="#" aria-label="Bluesky"><i class="fa-brands fa-bluesky"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/scipts.js"></script>
+</body>
+</html>

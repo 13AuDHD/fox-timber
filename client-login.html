@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Secure client portal concept for Fox & Timber project files, billing, and payment details.">
+  <meta name="theme-color" content="#171717">
+  <title>Client Login | Fox &amp; Timber</title>
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="apple-touch-icon" href="img/favicon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="portal-page">
+<header class="site-header">
+<a class="brand" href="index.html" aria-label="Fox and Timber home">
+  <img src="img/fox-timber-mark.png" alt="" />
+  <span>fox &amp; timber</span>
+</a>
+<button class="menu-toggle" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu">
+  <span></span><span></span><span></span>
+</button>
+<nav id="site-menu" class="site-menu" aria-label="Primary navigation">
+  <button class="menu-close" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+  <a href="index.html">home</a>
+  <a href="who.html">who</a>
+  <a href="what.html">what</a>
+  <a href="where.html">where</a>
+  <a href="how.html">how</a>
+  <a href="client-login.html">client login</a>
+  <div class="menu-social">
+    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="#" aria-label="Bluesky"><i class="fa-brands fa-bluesky"></i></a>
+  </div>
+</nav>
+</header>
+<main>
+<section class="portal-shell">
+  <div class="portal-intro">
+    <img src="img/fox-timber-mark.png" alt="Fox and Timber">
+    <p class="eyebrow">Private client portal</p>
+    <h1>Your work, files, and billing in one place.</h1>
+    <p>This prototype includes a demo account so the layout can be reviewed. A production portal requires secure server-side authentication, encrypted storage, and a payment processor.</p>
+  </div>
+  <div class="login-card" id="login-card">
+    <h2>Client login</h2>
+    <form id="login-form">
+      <label><span>Email</span><input type="email" name="login-email" required value="demo@foxandtimber.com"></label>
+      <label><span>Password</span><input type="password" name="login-password" required value="timber2026"></label>
+      <button class="button primary" type="submit">Enter portal</button>
+      <p class="micro">Demo: demo@foxandtimber.com / timber2026</p>
+      <p class="login-error" role="alert"></p>
+    </form>
+  </div>
+</section>
+<section class="dashboard" id="client-dashboard" hidden>
+  <aside class="dashboard-nav">
+    <img src="img/fox-timber-mark.png" alt="">
+    <p>Demo Client</p>
+    <button data-tab="overview" class="active"><i class="fa-solid fa-grid-2"></i> Overview</button>
+    <button data-tab="files"><i class="fa-solid fa-folder-open"></i> Files</button>
+    <button data-tab="billing"><i class="fa-solid fa-receipt"></i> Billing</button>
+    <button data-tab="payments"><i class="fa-solid fa-credit-card"></i> Payments</button>
+    <button id="logout-button"><i class="fa-solid fa-arrow-right-from-bracket"></i> Log out</button>
+  </aside>
+  <div class="dashboard-main">
+    <section data-panel="overview">
+      <p class="eyebrow">Project dashboard</p><h2>Good afternoon, Demo Client.</h2>
+      <div class="metric-grid"><article><span>Active project</span><b>Brand launch</b></article><article><span>Next review</span><b>July 18</b></article><article><span>Files ready</span><b>6</b></article></div>
+      <img src="img/portal-preview.svg" alt="Client portal interface preview">
+    </section>
+    <section data-panel="files" hidden><p class="eyebrow">Files</p><h2>Shared project files</h2>
+      <div class="file-list"><article><i class="fa-solid fa-file-pdf"></i><div><b>Brand Strategy v2.pdf</b><span>2.4 MB • Updated July 12</span></div><button>Download</button></article><article><i class="fa-solid fa-file-image"></i><div><b>Logo Concepts.zip</b><span>18.8 MB • Updated July 10</span></div><button>Download</button></article><article><i class="fa-solid fa-file-lines"></i><div><b>Website Content Notes.docx</b><span>340 KB • Updated July 8</span></div><button>Download</button></article></div>
+    </section>
+    <section data-panel="billing" hidden><p class="eyebrow">Billing</p><h2>Invoices and account history</h2><div class="invoice"><div><b>Invoice FT-1024</b><span>Brand strategy deposit</span></div><strong>Paid • $1,250.00</strong></div><div class="invoice"><div><b>Invoice FT-1028</b><span>Design development milestone</span></div><strong>Due July 22 • $1,250.00</strong></div></section>
+    <section data-panel="payments" hidden><p class="eyebrow">Payments</p><h2>Payment details</h2><div class="payment-card"><i class="fa-brands fa-cc-visa"></i><div><b>Visa ending in 4242</b><span>Expires 12/29</span></div><button>Update</button></div><p class="micro">Production payments should be handled through Stripe, Square, or another PCI-compliant provider. Never store raw card data in this website.</p></section>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div>
+    <img src="img/fox-timber-mark.png" alt="" class="footer-mark">
+    <p>Thoughtful design, strategy, and storytelling from Durango, Colorado to wherever your work needs to go.</p>
+  </div>
+  <div class="footer-links">
+    <a href="who.html">Our story</a>
+    <a href="what.html">Services</a>
+    <a href="how.html">Start a conversation</a>
+    <a href="client-login.html">Client portal</a>
+  </div>
+  <div>
+    <p class="eyebrow">Fox &amp; Timber, LLC</p>
+    <p>Durango, Colorado<br>Serving clients worldwide</p>
+    <div class="social-row">
+      <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="#" aria-label="Bluesky"><i class="fa-brands fa-bluesky"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/scipts.js"></script>
+</body>
+</html>
