@@ -104,5 +104,6 @@
   }
 }
 
+loadPartial("site-head", "head.html");
 loadPartial("site-header", "header.html");
 loadPartial("site-footer", "footer.html");
